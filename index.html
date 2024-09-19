@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1> 
+    <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="cuerpo">       
+    <form action="#" method="post" id="text">
+        <fieldset>
+        <label for="nombre"><label for="nombre">Nombre </label><input type="text" id="name" name="nombre" placeholder="Ingresa tu nombre" required></label>
+        <label for="email"><label for="email">Email </label><input type="email" id="email" name="email" placeholder="Ingresa tu email" required></label>
+        <label for="edad"><label for="edad">Edad</label> 
+        <input type="number" name="edad" min="10" max="99" placeholder="Edad">
+    </label>
+    <label for="recomendacion" id="dropdown">¿Que opcion describe mejor tu ocupacion actual?
+        <select name="recomendacion" id="recomendacion">
+            <option value="">Selecciona una opcion</option>
+                    <option value="1">Estudiante</option>
+                    <option value="2">Trabajador</option>
+                    <option value="3">Emprendedor</option>
+                    <option value="4">Prefiero no decir</option>
+                    <option value="5">Otro</option>
+        </select>
+    </label>
+    <fieldset>
+        <legend>¿Recomendarias freeCodeCamp a un amigo?</legend>
+        <label for="si">
+            <input type="radio" name="recomendacion" class="name" checked>Si
+        </label>
+        <label for="no"></label>
+            <input type="radio" name="recomendacion" class="name">No
+        </label>
+        <label for="no estoy segura"></label>
+            <input type="radio" name="recomendacion" class="name">No estoy segura
+        </label>
+    </fieldset>
+    <div class="check">
+        <legend>¿Que te gustaria ver mejorado?</legend>
+        <input type="checkbox" checked>
+        <label class="lbl-check">
+            Comunidad de codigo abierto
+        </label>
+        <input type="checkbox">
+        <label class="lbl-check">
+            Videos
+        </label>
+        <input type="checkbox">
+            <label class="lbl-check">
+            Imagenes
+        </label>
+        <input type="checkbox">
+        <label class="lbl-check">
+            Challenges
+        </label>
+    </div>
+
+    <label for="Mensaje">¿Algun comentario o sugerencia? 
+        <textarea name="Mensaje" id="mensaje" rows="3" cols="30" placeholder="Ingresa tu comentario aqui"></textarea>
+    </label>
+    <input type="submit" value="Enviar" class="enviar">
+    </form>
+</div>
+</body>
+</html>
